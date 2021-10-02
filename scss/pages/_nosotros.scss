@@ -1,0 +1,47 @@
+/* --> INICIO CLASES nosotros.html <-- */
+.mainQuieneSomos {
+    flex-direction: row;
+    justify-content: center;
+}
+
+.quienesSomos {
+    align-items: flex-start;
+    display: flex;
+    justify-content: center;
+    min-height: 66vh;
+    max-width: 60vw;
+    width: 100%;
+}
+
+.quienesSomosTexto {
+    flex-direction: column;
+    max-width: 60%;
+    padding-left: 2rem;
+}
+
+.quienesSomosH2 {
+    color: #337dff;
+    font-size: 4rem;
+    font-weight: 700;
+    padding: 0rem 0rem 2rem;
+    width: 100%;
+}
+
+.quienesSomosP {
+    color: rgb(80,80,80);
+    font-size: 2rem;
+}
+
+.quienesSomosLogo {
+    display: flex;
+    max-width: 40%;
+    padding: 7rem 2rem;
+}
+
+.quienesSomosLogoImg {
+    box-shadow: 0rem 0rem 0.25rem rgb(80, 80, 80);
+    display: flex;
+    height: 300px;
+    width: 300px;
+}
+/* FIN CLASES nosotros.html */

@@ -1,0 +1,448 @@
+/* INICIO CLASES INDEX.html*/
+
+/* Clases Carrousel */
+.carrousel {
+    display: flex;
+    max-height: 70vh;
+    position: relative;
+    width: 100%;
+
+    .carrouselImg {
+        display: flex;
+        height: 75vh;
+        width: 100%;
+    }
+    
+    .carrouselTexto {
+        background-image: linear-gradient(
+            to bottom,
+            rgba(0, 29, 77, 0.01),
+            rgba(0, 29, 77, 0.7),
+            rgba(0, 29, 77, 0.9)
+             );
+        bottom: 0.1em;
+        position: absolute;
+        width: 100%;
+
+        .carrouselVolanta {
+            color: #337dff;
+            font-size: $font-lg;
+            font-weight: 500;
+            font-style: italic;
+            padding-left: $spacing-xl*2;
+        }
+    
+        .carrouselH2 {
+            color: white;
+            display: flex;
+            font-size: ($font-xl*2);
+            font-weight: 900;
+            justify-content: flex-start;
+            padding: $spacing-md ($spacing-xl*2) 0rem;
+            text-align: left;
+            text-shadow: 0.25rem 0.25rem 0.25rem rgba(100, 100, 100, 0.5);
+        }
+
+        .carrouselVolantaMobile {
+            display: none;
+        }
+        
+        .carrouselP {
+            color: rgb(220, 220, 220);
+            display: flex;
+            font-size: $font-xl;
+            font-weight: 700;
+            line-height: 1.4;
+            padding: $spacing-xl ($spacing-xl*2) ($spacing-xl*2);
+            width: 100%;
+        }
+    }
+}
+
+.carrousel:hover {
+    box-shadow: 0rem 0rem 10rem rgba(80, 80, 80, 0.5);
+    transform: scale(1.02, 1.02);
+
+    .carrouselImg {
+        transform: scale(1.02, 1.02);
+    }
+
+    .carrouselTexto {
+        background-image: linear-gradient(
+            to bottom,
+            rgba(0, 110, 205, 0.01),
+            rgba(0, 110, 205, 0.8),
+            rgba(0, 110, 205, 0.7)            
+            );
+        transform: scale(1.02, 1.08);
+    }
+
+    .carrouselH2 {
+        text-shadow: 0.25rem 0.25rem 0.25rem rgba(150, 150, 150, 0.5);
+    }
+
+    // .carrouselP {
+    //     // color: white;
+    //     padding-bottom: 4rem;
+    // }
+}
+
+/* Clases Notas Terciarias */
+.TERCIARIAS {
+    background-color: rgb(230,230,230);
+    display: flex;
+    margin: ($spacing-xl*2) 0rem;
+    max-width: 120rem;
+
+    &__NOTA {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        max-width: 22%;
+        padding: $spacing-xl;
+        width: 20%;
+
+        &__IMG {
+            max-width: 100%;
+        }
+
+        &__TITULO {
+            color: rgb(80,80,80);
+            font-size: $font-lg;
+            font-weight: 500;
+            padding-top: $spacing-sm;
+        }
+
+        &:hover {
+            background-color: rgba(0, 110, 255, 0.25);
+            padding: $spacing-md;
+            // width: 20%;
+
+            &__TITULO {
+                font-weight: 700;
+            }
+        }
+
+        &:hover &{   
+            &__TITULO {
+                font-weight: 700;
+            }
+        }
+    }
+}
+
+/* Clases Notas Secundarias */
+/*.SECUNDARIAS {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    max-width: 120rem;
+    width: 100%;
+
+    &__NOTA {
+        background-color: rgb(204, 204, 204);
+        margin: 1rem 0rem;
+    }
+}*/
+
+.sectionNotasSecundarias {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    max-width: 120rem;
+    width: 90%;
+
+    & > article {
+        background-color: rgb(204, 204, 204);
+        margin: $spacing-md 0rem;
+
+        .notasSecundarias {
+            display: flex;
+            // flex-direction: row;
+            justify-content: center;
+            width: 100%;
+        
+            img {
+                height: 202.5px;
+                max-width: 30%;
+                width: 360px;
+            }
+
+            .notasSecundariasTexto {
+                // max-width: 70%;
+                padding: $spacing-xl $spacing-xl 0rem;
+            
+                h3 {
+                    color: #337dff;
+                    font-size: $font-xxl;
+                    font-weight: 700;
+                    padding-top: $spacing-md;
+                }
+            
+                p {
+                    color: rgb(80, 80, 80);
+                    font-size: 1.8rem;
+                    line-height: 1.2;
+                    padding: $spacing-xl 0rem;
+                }
+                
+                .notasSecundariasVolanta {
+                    color: rgb(40, 40, 40);
+                    font-size: $font-lg;
+                    font-weight: 300;
+                }
+            }
+        }
+
+        &:hover {
+            transform: scale(1.02, 1.02);
+            .notasSecundarias {
+                background-color: rgba(0, 110, 255, 0.25);
+            
+                .notasSecundariasTexto {
+                    h3 {
+                        color: $white;
+                    }
+                }
+            
+                .notasSecundariasVolanta {
+                    font-weight: 700;
+                }
+            }
+        }
+    }
+}
+
+/*.NOTA {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 100%;
+
+    &__IMG {
+        max-width: 30%;
+    }
+
+    &__TEXTO {
+        max-width: 70%;
+        padding: 2rem 2rem 0rem;
+
+        &__VOLANTA {
+            color: rgb(40, 40, 40);
+            font-size: 1.5rem;
+            font-weight: 300;
+        }
+
+        &__TITULO {
+            color: #337dff;
+            font-size: 2.5rem;
+            font-weight: 700;
+            padding-top: 1rem;
+        }
+
+        &__PARRAFO {
+            color: rgb(80, 80, 80);
+            font-size: 1.8rem;
+            line-height: 1.2;
+            padding: 2rem 0rem;
+        }
+    }
+}*/
+
+/*.notasSecundarias {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 100%;
+
+    img {
+        max-width: 30%;
+    }
+}
+/* FIN clases index.html */
+
+/* INICIO MEDIAS INDEX.HTML */
+@media only screen and (max-width: 1024px) {
+
+    /* CLASES INDEX.html*/
+
+    // main {
+    //     padding: ($spacing-xl*2) 0rem;
+    // }
+
+    /* Clases Carrousel */
+    .carrousel {
+        max-width: 90vw;
+
+        .carrouselImg {
+            width: 100%;
+        }
+    
+        .carrouselTexto {
+            position: absolute;
+            padding-bottom: $spacing-xxl;
+            width: 100%;
+
+            .carrouselVolanta {
+                padding-left: $spacing-xxl;
+            }
+        
+            .carrouselP {
+                color: $white;
+                font-weight: 500;
+                letter-spacing: 0.1rem;
+                line-height: 1.4;
+                padding: $spacing-lg $spacing-xl;
+            }
+        }
+    }
+
+    .carrousel:hover {
+        box-shadow: 0.5rem 0.5rem 0.5rem rgba(80,80,80, 0.5);
+        width: 100%;
+
+        .carrouselImg {
+            width: 100%;
+        }
+
+        .carrouselTexto {
+            width: 100%;
+        }
+    }
+
+    /* Clases Notas Terciarias */
+    .sectionNotasTerciarias {
+        max-width: 100%;
+
+        .notasTerciarias {
+            padding: $spacing-md;
+        }
+    }
+
+    /* Clases Notas Secundarias */
+    .sectionNotasSecundarias {
+        max-width: 80vw;
+
+        & > article {
+            margin: 0rem;
+
+            .notasSecundarias {
+                align-items: center;
+                flex-direction: column;
+                width: 100%;
+        
+                img {
+                    height: auto;
+                    max-width: 100%;
+                    width: 100%;
+                }
+        
+                .notasSecundariasTexto {
+                    max-width: 100%;
+            
+                    h3 {
+                        font-size: $font-xl;
+                    }
+            
+                    p {
+                        font-size: $font-lg;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 600px) {
+
+    .container {
+        width: 100vw;
+    }
+
+    .carrousel {
+        max-width: 90vw;
+        position: relative;
+
+        .carousel-indicators { /* CLASE BOOTSTRAP */
+            margin-bottom: 0rem;
+        }
+
+        .carrouselImg {
+            display: flex;
+            width: 100%;
+        }
+        
+        .carrouselTexto {
+            background-color: rgba(0, 110, 205, 0.5);
+            position: relative;
+            width: 100%;
+
+            .carrouselVolanta {
+                display: none;
+            }
+    
+            .carrouselH2 {
+                color: $white;
+                font-size: $font-xxl;
+                padding: $spacing-md ($spacing-xl*3) $spacing-xl;
+            }
+
+            .carrouselVolantaMobile {
+                font-size: $font-lg;
+                font-weight: 500;
+                font-style: italic;
+                display: block;
+                padding-left: $spacing-xl;
+            }
+            
+            .carrouselP {
+                color: rgb(220, 220, 220);
+                font-size: 1.8rem;
+                // padding-bottom: $spacing-xxl;
+            }
+        }
+    }
+    
+    .carrousel:hover {
+        width: 100%;
+
+        .carrouselImg {
+            width: 100%;
+        }
+
+        .carrouselTexto {
+            background-color: rgb(220, 220, 220);
+            background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.01), rgba(0, 0, 0, 0.5));
+            padding-bottom: $spacing-lg;
+            width: 100%;
+
+            .carrouselH2{
+                color: rgba(0, 110, 255, 0.7);
+                width: 100%;
+            }
+
+            .carrouselP {
+                line-height: 1.2;
+                font-weight: 500;
+            }
+        }
+    }
+
+    /* Clases Notas Terciarias */
+    .sectionNotasTerciarias {
+        align-items: center;
+        flex-direction: column;
+        margin: $spacing-xl 0rem;
+        max-width: 32rem;
+
+        .notasTerciarias {
+                max-width: 90%;
+                width: 90%;
+            }
+    }
+    
+    .notasTerciarias:hover {
+        width: 90%;
+    }
+}
+/* FIN MEDIAS INDEX.HTML */

@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="trabajos, jobs, work, hardware, tecnologia, technology, computacion, computadoras, perifericos, teclados, mouses, ratones, mices, headsets, auriculares, monitores, gabinetes, cpus, gpus, rams, memorias, ssd, hdd, mothers, psu, fuentes, gamer, gadgets, lanzamientos, celulares, moviles">
+    <meta name="description" content="En nuestra sección de 'Unítenos' vas a poder contactarnos y acercarnos tu información personal, y así poder uniter a éste grupo increible de locos por el hardware que formamos y empezar a colaborar con toda ésta comunidad hermosa.">
+
+    <title>Unítenos | MeanMachine Hardware & Tech</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+    <link rel="stylesheet" href="../css/index.css">
+    <!-- <link rel="stylesheet" href="./css/estilos.css"> -->
+</head>
+<body>
+    <!-- INICIO HEADER -->
+    <header class="grid-header">
+        <!-- inicio menu INDEX -->
+        <nav class="NAVBAR">
+            <!-- LOGO -->
+            <div class="NAVBAR__LOGO">
+                <a href="../index.html">
+                    <img class="logo" src="../media/LogoMeanMachine.png" alt="Logo Mean Machine Web">
+                </a>
+            </div>
+            <!-- FIN LOGO -->
+
+            <!-- INICIO MENU -->
+            <ul class="MENU menu">
+                <li class="MENU__BOTON--ACTIVO botonesMenu">
+                    <a href="../index.html">INICIO</a>
+                </li>
+                <li class="MENU__BOTON botonesMenu">
+                    <a href="./noticias.html">NOTICIAS</a>
+                    <!-- INICIO SUBMENU -->
+                    <ul class="SUBMENU subMenu">
+                        <li class="SUBMENU__BOTON botonesMenu">
+                            <a href="">CELULARES</a>
+                        </li>
+                        <li class="SUBMENU__BOTON botonesMenu">
+                            <a href="">HARDWARE</a>
+                        </li>
+                        <li class="SUBMENU__BOTON botonesMenu">
+                            <a href="">PERIFÉRICOS</a>
+                        </li>
+                        <li class="SUBMENU__BOTON botonesMenu">
+                            <a href="">SOFTWARE</a>
+                        </li>
+                    </ul>
+                    <!-- FIN SUBMENU -->
+                </li>
+                <li class="MENU__BOTON botonesMenu">
+                    <a href="./reviews.html">REVIEWS</a>
+                    <!-- INICIO SUBMENU -->
+                    <ul class="SUBMENU subMenu">
+                        <li class="SUBMENU__BOTON botonesMenu">
+                            <a href="">CELULARES</a>
+                        </li>
+                        <li class="SUBMENU__BOTON botonesMenu">
+                            <a href="">HARDWARE</a>
+                        </li>
+                        <li class="SUBMENU__BOTON botonesMenu">
+                            <a href="">PERIFÉRICOS</a>
+                        </li>
+                        <li class="SUBMENU__BOTON botonesMenu">
+                            <a href="">SOFTWARE</a>
+                        </li>
+                    </ul>
+                    <!-- FIN SUBMENU -->
+                </li>
+                <li class="MENU__BOTON botonesMenu">
+                    <a href="./nosotros.html">NOSOTROS</a>
+                </li>
+                <li class="MENU__BOTON botonesMenu paginaActiva">
+                    <a href="./unitenos.html">UNÍTENOS</a>
+                </li>
+                <li class="MENU__SEARCHBOX">
+                    <input type="search" placeholder="Buscar">
+                </li>
+            </ul>
+        </nav>
+        <!-- FIN MENU -->
+    </header>
+    <!-- FIN HEADER -->
+
+    <main class="container"> <!-- INICIO MAIN -->
+
+        <!-- Inicio Formulario -->
+      <div class="form-control mt-3 p-5">
+        <form action="/" method="POST" enctype="application/x-www-form-urlencoded" name="Formulario Trabajá con Nosotros"> 
+          <h2 class="pb-3 d-grid gap-2 d-md-flex justify-content-md-center">¿Querés trabajar con nosotros? <br> Dejanos tus datos abajo, ¡y te podremos contactar!</h2>
+          <!-- Inicio Nombre -->
+          <div class="form-group pb-2 d-grid gap-2 d-md-flex justify-content-md-center">
+            <div class="row col-6 pt-2">
+                <label class="form-label col-form-label-lg col-auto" for="Nombre">Nombre</label>
+                <input class="form-control form-control-lg col-auto" type="text" name="Nombre" placeholder="Escribí tu Nombre"> 
+            </div>  
+          </div>
+          <!-- Fin Nombre -->
+
+          <!-- Inicio Apellido -->
+          <div class="form-group pb-2 d-grid gap-2 d-md-flex justify-content-md-center">
+            <div class="row col-6 pt-2">
+                <label class="form-label col-form-label-lg col-auto" for="Apellido">Apellido</label>
+                <input class="form-control form-control-lg col-auto" type="text" name="Apellido" placeholder="Escribí tu Apellido"> 
+            </div>  
+          </div>
+          <!-- Fin Apellido -->
+
+          <!-- Inicio Mail -->
+          <div class="form-group pb-2 d-grid gap-2 d-md-flex justify-content-md-center">
+            <div class="row col-6 pt-2">
+                <label class="form-label col-form-label-lg col-auto" for="email">Email</label>
+                <input class="form-control form-control-lg col-auto" type="email" placeholder="Escribí tu Email"> 
+            </div>
+          </div>
+          <!-- Fin Mail -->
+
+          <!-- Inicio Puesto a Aplicar -->
+          <div class="pt-4 pb-2 d-grid gap-2 d-md-flex justify-content-md-center">
+            <div class="row col-6">
+              <label for="Puesto" class="form-label col-form-label-lg">¿A qué puesto te gustaría aplicar?</label>
+              <select class="form-select form-select-lg" name="Puesto" id="">
+                <option value="Copywriter">Redactor</option>
+                <option value="Editor">Editor</option>
+                <option value="Designer">Diseñador</option>
+                <option value="WebDev">Desarrollador Web</option>
+              </select>
+            </div>
+          </div>
+          <!-- Fin Puesto a Aplicar -->
+
+          <!-- Inicio Enviar CV -->
+          <div class="pt-4 pb-2 d-grid gap-2 d-md-flex justify-content-md-center">
+            <div class="row col-6">
+                <label for="Curriculum" class="form-label col-form-label-lg">Envianos tu CV</label>
+                <input class="form-control form-control-lg" type="file" name="Curriculum" id="">
+            </div>
+          </div>
+          <!-- Fin Enviar CV -->
+
+          <!-- Inicio Términos y Condiciones -->
+          <div class="form-check d-grid gap-2 d-md-flex justify-content-md-center mt-5 mb-3">
+            <input type="checkbox" class="form-check-input me-1" name="terminos" value="0">
+            <label for="terminos" class="form-check-label"><a class="terminosCondiciones" href="">Términos y Condiciones</a></label>
+          </div>
+          <!-- Fin Términos y Condiciones -->
+
+          <!-- Inicio Botones -->  
+          <div class="d-grid gap-2 d-md-flex justify-content-md-center">
+            <button type="reset" class="btn btn-outline-danger btn-lg">Reset</button>
+            <button type="submit" class="btn btn-dark btn-lg">Submit</button>
+          </div>
+          <!-- Fin Botones -->  
+        </form> 
+      </div>
+      <!-- Fin Formulario -->
+
+    </main> <!-- FIN MAIN -->
+
+    <!-- INICIO FOOTER -->
+    <footer class="grid-footer">
+        <div class="grid-footer-logo">
+            <a href="#top">
+                <img class="footerLogo" src="../media/LogoMeanMachineNegativo.png" alt="Logo Mean Machine Web">
+            </a>
+        </div>
+        <div class="footerSocial grid-footer-instagram">
+            <a href="/">
+                <div class="footerIconoInstagram" alt="Ícono Instagram"></div>
+                <span class="footerEtiquetaSocial">MeanMachine H&T</span>
+            </a>
+        </div>
+        <div class="footerSocial grid-footer-youtube">
+            <a href="/">
+                <div class="footerIconoYoutube" alt="Ícono Youtube"></div>
+                <span class="footerEtiquetaSocial">MeanMachine H&T</span>
+            </a>
+        </div>
+        <div class="footerSocial grid-footer-facebook">
+            <a href="/">
+                <div class="footerIconoFacebook" alt="Ícono Facebook"></div>
+                <span class="footerEtiquetaSocial">MeanMachine H&T</span>
+            </a>
+        </div>
+        <div class="footerSocial grid-footer-email">
+            <a href="/">
+                <div class="footerIconoMail" alt="Ícono Email"></div>
+                <span class="footerEtiquetaSocial">MeanMachine H&T</span>
+            </a>
+        </div>
+    </footer>
+    <!-- FIN FOOTER -->
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
+</body>
+</html>

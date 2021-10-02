@@ -1,0 +1,21 @@
+/* IMPORTS */
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+
+/* VARIABLES */
+@import "./variables";
+
+/* GLOBALS */
+@import "./globals";
+
+/* PARTIALS */
+@import "./partials/header";
+@import "./partials/footer";
+
+
+/* PAGES */
+@import "./pages/home";
+@import "./pages/nosotros";
+@import "./pages/noticias";
+@import "./pages/reviews";
+@import "./pages/unitenos";
+@import "./pages/_404-not-found.scss";

@@ -1,0 +1,997 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+
+/* NORMALIZE */
+
+* {
+    box-sizing: border-box;
+    font-family: 'Lato' !important;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-size: 62.5%; /* Para que el tamaño de la fuente base sea 10px*/
+    height: 100%;
+    text-decoration: none;
+}
+
+body {
+    background-color: #f5f5f5;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    min-width: 100%;
+    width: 100%;
+}
+
+:root {
+    --bs-body-line-height: 1;
+}
+
+.h1, .h2, .h3, .h4, .h5, .h6, h1, h2, h3, h4, h5, h6 {
+    margin-bottom: 0rem;
+}
+
+ol, ul {
+    padding-left: 0rem;
+}
+
+h1 {
+    display: none;
+}
+
+a {
+    color: rgb(220, 220, 220) /*#337dff*/;
+    text-decoration: none;
+}
+
+    /* --> INICIO CSS HEADER <--- */
+
+header {
+    /* background-color: rgb(80,80,80); */
+    display: flex;
+    width: 100%;
+    z-index: 1000;
+}
+
+nav {
+    align-items: center;
+    background-color: rgba(0, 29, 77, 0.9);
+    box-shadow: 0rem 0.25rem 0.5rem rgba(0, 9, 37, 0.8);
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    width: 100%;
+}
+
+    /* LOGO HEADER */
+
+.logo {
+    max-height: 12rem;
+    padding: 2rem 0rem;
+    animation-name: logoRotate;
+    animation-timing-function: ease;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes logoRotate {
+    0% {
+        transform: rotateY(0deg);
+        opacity: 1; }
+    50% { opacity: 0; }
+    100% {
+        transform: rotateY(360deg);
+        opacity: 1; }
+}
+
+    /* CLASES MENU */
+
+.menu {
+    align-items: center;
+    display: flex;    
+    font-size: 1.5em;
+    font-weight: 900;
+    margin-bottom: 0rem;
+}
+
+.botonesMenu {
+    padding: 0.5rem 1rem;
+}
+
+.botonesMenu:hover {
+    background-color: #337dff;
+}
+
+.botonesMenu:hover > a {
+    color: #f5f5f5;
+}
+
+.subMenu {
+    background-color: rgba(0, 29, 77, 0.9);
+    display: none;
+    position: absolute;
+}
+
+.botonesMenu:hover > .subMenu {
+    display: flex;
+    flex-direction: column;
+    margin-top: 0.5rem;
+    margin-left: -1rem;
+}
+
+.paginaActiva > a{
+    color: white;
+    font-size: 1.7rem;
+    font-weight: 900;
+    /* border-bottom: solid 0.25rem rgb(220, 220, 220); */
+}
+
+ul > .paginaActiva {
+    background-color: rgb(180, 180, 180);
+    box-shadow: inset 0rem 0rem 0.35rem rgb(40, 40, 40);
+}
+
+    /* --> FIN CSS HEADER <-- */
+
+main {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    padding: 18rem 0rem 4rem;
+}
+
+    /* --> INICIO CSS FOOTER <-- */
+
+footer {
+    background-color: rgb(204,204,204);
+    display: flex;
+    justify-content: center;
+}
+
+.footerLogo {
+    /* background-image: url("../media/LogoMeanMachineNegativo.png"); */
+    max-height: 10rem;
+    padding: 2rem 0rem;
+}
+
+.footerSocial {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 2rem;
+}
+
+.footerSocial a {
+    align-items: center;
+    display: flex;
+    padding: 1rem;
+}
+
+.footerIconoInstagram {
+    background-image: url("../media/icons/instagram-gris.svg");
+    border-radius: 0.5rem;
+    height: 30px;
+    width: 30px;
+    overflow: hidden;
+}
+
+.footerIconoYoutube {
+    background-image: url("../media/icons/youtube-gris.svg");
+    border-radius: 0.5rem;
+    height: 30px;
+    width: 30px;
+    overflow: hidden;
+}
+
+.footerIconoFacebook {
+    background-image: url("../media/icons/facebook-gris.svg");
+    border-radius: 0.5rem;
+    height: 30px;
+    width: 30px;
+    overflow: hidden;
+}
+
+.footerIconoMail {
+    background-image: url("../media/icons/email-gris.svg");
+    border-radius: 0.5rem;
+    height: 30px;
+    width: 30px;
+    overflow: hidden;
+}
+
+.footerEtiquetaSocial {
+    color: rgb(80,80,80);
+    font-size: 1.5rem;
+    font-weight: 700;
+    padding: 0.5rem;
+}
+
+@keyframes bump {
+    33% {
+        transform: scale(1.8);
+    }
+    66% {
+        transform: scale(0.8);
+    }
+    100% {
+        transform: scale(1);
+    }
+    
+}
+
+/* .footerLogo:hover {
+    background-image: url("../media/LogoMeanMachine.png");
+} */
+
+.footerSocial:hover {
+    background-color: rgba(0, 110, 255, 0.3);
+    transform: scale(1.1);
+}
+
+.footerSocial:hover .footerIconoInstagram {
+    animation: bump 0.5s ease-in-out;
+    background-image: url("../media/icons/instagram.svg");
+    overflow: hidden;
+}
+
+.footerSocial:hover .footerIconoYoutube {
+    animation: bump 0.5s ease-in-out;
+    background-image: url("../media/icons/youtube.svg");
+    overflow: hidden;
+}
+
+.footerSocial:hover .footerIconoFacebook {
+    animation: bump 0.5s ease-in-out;
+    background-image: url("../media/icons/facebook.svg");
+    overflow: hidden;
+}
+
+.footerSocial:hover .footerIconoMail {
+    animation: bump 0.5s ease-in-out;
+    background-image: url("../media/icons/email.svg");
+    overflow: hidden;
+}
+
+.footerSocial:hover .footerEtiquetaSocial {
+    color: white;
+}
+
+/* --> FIN CSS FOOTER <-- */
+
+
+/* INICIO CLASES INDEX.html*/
+
+/* Clases Carrousel */
+.carrousel {
+    display: flex;
+    max-height: 70vh;
+    /* max-width: 90vw; */
+    position: relative;
+    width: 100%;
+}
+
+.carrouselImg {
+    display: flex;
+    height: 75vh;
+    width: 100%;
+}
+
+.carrouselTexto {
+    background-image: linear-gradient(to bottom, rgba(40, 40, 40, 0.01), rgba(40, 40, 40, 0.8));
+    bottom: 0.1em;
+    position: absolute;
+    width: 100%;
+}
+
+.carrouselH2 {
+    color: white;
+    display: flex;
+    font-size: 4rem;
+    font-weight: 900;
+    justify-content: center;
+    padding: 1rem 1rem 0rem;
+    text-align: center;
+    text-shadow: 0.25rem 0.25rem 0.25rem rgb(100, 100, 100, 0.5);
+}
+
+.carrouselP {
+    color: rgb(220, 220, 220);
+    display: flex;
+    font-size: 2rem;
+    font-weight: 700;
+    line-height: 1.2;
+    padding: 3rem;
+    width: 100%;
+}
+
+.carrousel:hover {
+    box-shadow: 0rem 0rem 10rem rgba(80, 80, 80, 0.5);
+    transform: scale(1.02, 1.02);
+    /* width: 100%; */
+}
+
+.carrousel:hover .carrouselImg {
+    transform: scale(1.02, 1.02);
+    /* width: 100%; */
+}
+
+.carrousel:hover .carrouselTexto {
+    background-image: linear-gradient(to bottom, rgba(40, 40, 40, 0.1), rgba(40, 40, 40, 0.9));
+    transform: scale(1.02, 1.08);
+    /* width: 100%; */
+}
+
+.carrousel:hover .carrouselH2 {
+    /* color: white; */
+    text-shadow: 0.25rem 0.25rem 0.25rem rgb(150, 150, 150, 0.5);
+}
+
+.carrousel:hover .carrouselP {
+    color: white;
+}
+
+/* Clases Notas Terciarias */
+
+.sectionNotasTerciarias {
+    background-color: rgb(230,230,230);
+    display: flex;
+    margin: 4rem 0rem;
+    max-width: 120rem;
+}
+
+.notasTerciarias {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    max-width: 20%;
+    padding: 2rem;
+    width: 20%;
+}
+
+.notasTerciarias img {
+    max-width: 100%;
+}
+
+.notasTerciarias h4 {
+    color: rgb(80,80,80);
+    font-size: 1.5rem;
+    padding-top: 0.5rem;
+}
+
+.notasTerciarias:hover {
+    background-color: rgba(0, 110, 255, 0.25);
+    width: 22%;
+}
+
+/* Clases Notas Secundarias */
+
+.sectionNotasSecundarias {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    max-width: 120rem;
+    width: 100%;
+}
+
+.sectionNotasSecundarias article {
+    background-color: rgb(204,204,204);
+    margin: 1rem 0rem;
+}
+
+.notasSecundarias {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 100%;
+}
+
+.notasSecundarias img {
+    max-width: 30%;
+}
+
+.notasSecundariasTexto {
+    max-width: 70%;
+    padding: 2rem 2rem 0rem;
+}
+
+.notasSecundariasVolanta {
+    color: rgb(40, 40, 40);
+    font-size: 1.5rem;
+    font-weight: 300;
+}
+
+.notasSecundariasTexto h3 {
+    color: #337dff;
+    font-size: 2.5rem;
+    font-weight: 700;
+    padding-top: 1rem;
+}
+
+.notasSecundariasTexto p {
+    color: rgb(80,80,80);
+    font-size: 1.8rem;
+    line-height: 1.2;
+    padding: 2rem 0rem;
+}
+
+.notasSecundarias:hover {
+    background-color: rgba(0, 110, 255, 0.25);
+}
+
+.notasSecundarias:hover .notasSecundariasTexto h3 {
+    color: white;
+}
+
+.notasSecundarias:hover .notasSecundariasVolanta {
+    font-weight: 700;
+}
+/* FIN clases index.html */
+    
+
+/* INICIO CLASES NOTICAS.html */
+
+.carrouselNoticias {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    height: 70vh;
+    margin-bottom: 4rem;
+    max-width: 80vw;
+    width: 100%;
+}
+
+    /* Carrousel Nota Principal */
+
+.carrouselNotaPrincipal {
+    /* background-image: linear-gradient(to right, #240640, #1a41a5); */
+    display: flex;
+    max-width: 70%;
+    margin-right: 2rem;
+    position: relative;
+    width: 100%;
+}
+
+.carrouselLinkImg {
+    max-height: 100%;
+    max-width: 100%;
+    overflow: hidden;
+}
+
+.carrouselNotaPrincipalImg {
+    background-image: url("../media/imgs/HyperxCloudOrbitS.jpg");
+    display: flex;
+    width: 100vw;
+    height: 100%;
+}
+
+.carrouselNotaPrincipalTexto {
+    background-image: linear-gradient(to bottom, rgba(40, 40, 40, 0.01), rgba(40, 40, 40, 0.8));
+    bottom: 0.1em;
+    position: absolute;
+    width: 100%;
+}
+
+.carrouselNotaPrincipalH2 {
+    color: rgb(235, 235, 235);
+    font-size: 3rem;
+    font-weight: 900;
+    padding: 1rem 1.5rem 0rem;
+    text-shadow: 0.25rem 0.25rem 0.25rem rgb(220,220,220, 0.5);
+    width: 100%;
+}
+
+.carrouselNotaPrincipalP {
+    color: rgb(220, 220, 220);
+    display: flex;
+    font-size: 2rem;
+    font-weight: 700;
+    line-height: 1.5;
+    margin-bottom: 0rem;
+    padding: 1.5rem;
+    width: 100%;
+}
+
+.carrouselNotaPrincipal:hover {
+    box-shadow: 0rem 0rem 10rem rgba(80, 80, 80, 0.5);
+    transform: scale(1.02, 1.02);
+}
+
+/* .carrouselNotaPrincipal:hover .carrouselLinkImg {
+    transform: scale(1.02, 1.02);
+} */
+
+.carrouselNotaPrincipal:hover .carrouselNotaPrincipalTexto {
+    background-image: linear-gradient(to bottom, rgba(220, 220, 220, 0.35), rgba(220, 220, 220, 0.35));
+}
+
+.carrouselNotaPrincipal:hover .carrouselNotaPrincipalH2 {
+    color: white;
+}
+
+.carrouselNotaPrincipal:hover .carrouselNotaPrincipalP {
+    color: white;
+}
+
+    /* Carrousel Notas Secundarias */
+
+.carrouselNotasSecundarias {
+    display: flex;
+    flex-direction: column;
+    max-width: 30%;
+    width: 100%;
+}
+
+.carrouselNotasSecundariasMarginBottom {
+    /* background-image: linear-gradient(to right, #240640, #1a41a5); */
+    margin-bottom: 0.5rem;
+    /* max-height: 50vh; */
+}
+
+.carrouselNotasSecundariasMarginTop {
+    /* background-image: linear-gradient(to right, #240640, #1a41a5); */
+    margin-top: 0.5rem;
+    /* max-height: 50vh; */
+}
+
+.carrouselNotasSecundariasImg {
+    /* background-image: url("../media/HyperxCloudOrbitS.jpg"); */
+    display: flex;
+    /* height: 30rem; */
+    max-width: 100%;
+}
+
+/* Caro, en ésta clase, si saco el margin-top y pongo el position: absolut como lo tengo originalmente en la clase de la línea 427, me tira todo al demonio y desacomoda todo (no tengo idea por qué, si en la clase original funciona perfecto), y ahora en responsive cuando achico el viewport desde el navegador me desacomoda todo también. Si te hacés una idea por qué pasa esto estaría muy agradecido que me expliques qué está rompiendo, porque le di mil vueltas y no entiendo qué pasa, y lo dejé así para poder seguir avanzando, solo puse unos gradientes como background (línea 413, 484, y 489) simulando que la imagen abarca todo el contenedor -están comentados para que veas ésto que te digo y los puedas activar para ver cómo lo solucioné temporalmente- */
+.carrouselNotasSecundariasTexto {
+    background-color: rgb(100, 100, 100);
+    /* background-image: linear-gradient(to bottom, rgba(220, 220, 220, 0.01), rgba(220, 220, 220, 0.8)); */
+    bottom: 0.1em;
+    margin-top: -5.2rem;
+    position: relative;
+    width: 100%;
+}
+
+.carrouselNotasSecundariasH2 {
+    color: rgb(235, 235, 235);
+    font-size: 2rem;
+    font-weight: 700;
+    /* margin-left: 1.5rem; */
+    padding: 1rem 1.25rem 0rem;
+    text-shadow: 0.25rem 0.25rem 0.25rem rgb(220,220,220, 0.25);
+    width: 100%;
+}
+
+.carrouselNotasSecundariasP {
+    color: rgb(220, 220, 220);
+    font-size: 1.5rem;
+    font-weight: 500;
+    line-height: 1.2;
+    padding: 1rem 1.25rem 2rem;
+    width: 100%;
+}
+
+.carrouselNotasSecundariasMarginBottom:hover, .carrouselNotasSecundariasMarginTop:hover {
+    transform: scale(1.02, 1.02);
+}
+
+.carrouselNotasSecundariasMarginBottom:hover .carrouselNotasSecundariasTexto, .carrouselNotasSecundariasMarginTop:hover .carrouselNotasSecundariasTexto {
+    background-image: linear-gradient(to bottom, rgba(200, 200, 200, 0.8), rgba(200, 200, 200, 0.8));
+}
+
+.carrouselNotasSecundariasMarginBottom:hover .carrouselNotasSecundariasH2, .carrouselNotasSecundariasMarginTop:hover .carrouselNotasSecundariasH2 {
+    color: #337dff;
+}
+
+.carrouselNotasSecundariasMarginBottom:hover .carrouselNotasSecundariasP, .carrouselNotasSecundariasMarginTop:hover .carrouselNotasSecundariasP {
+    color: white;
+    font-weight: 600;
+    line-height: 1.35;
+}
+
+/* INICIO CLASES nosotros.html */
+.quienesSomos {
+    align-content: center;
+    display: flex;
+    flex-direction: row;
+    min-height: 65vh;
+    max-width: 100%;
+    width: 50vw;
+}
+
+.quienesSomosTexto {
+    flex-direction: column;
+    width: 70vw;
+    max-width: 100%;
+}
+
+.quienesSomosH2 {
+    color: #337dff;
+    font-size: 4rem;
+    font-weight: 700;
+    padding: 0rem 0rem 2rem;
+    width: 100%;
+}
+
+.quienesSomosP {
+    color: rgb(80,80,80);
+    font-size: 2rem;
+}
+
+.quienesSomosLogo {
+    background-image: linear-gradient(to bottom, rgba(80, 80, 80, 0), rgba(80, 80, 80, 0.7));
+    display: flex;
+    /* max-width: 100%; */
+    padding: 5rem 0rem;
+    width: 100%;
+}
+
+/* INICIO CLASES trabaja_nosotros.html */
+.terminosCondiciones {
+    color: #337dff;
+    font-size: 1.5rem;
+}
+
+/* Clases Bootstrap Modificadas */
+
+/* .container {
+    height: 90vh;
+} */
+
+.form-check-input {
+    height: 1.5rem;
+    width: 1.5rem;
+}
+
+.btn-dark {
+    color: white;
+    background-color: rgb(100, 100, 100);
+}
+.btn-dark:hover {
+    color: white;
+    background-color: #337dff;
+    border-color: rgb(40, 40, 40);
+    font-size: 1.5rem;
+    font-weight: 700;
+  }
+
+.btn-lg {
+    border-radius: 0.25rem;
+    font-size: 1.5rem;
+    height: 5rem;
+    width: 10rem;
+}
+
+
+    /* MEDIAS QUERIES */
+
+@media only screen and (max-width: 1024px) {
+    
+    .grid-container {
+        display: grid;
+        align-content: center;
+        gap: 2rem;
+        grid-template-areas: 
+        "grid-header"
+        "grid-main"
+        "grid-footer";
+        min-width: 100vw;
+    }
+    
+    .grid-header {
+        background-color: rgb(80,80,80);
+        display: grid;
+        grid-area: grid-header;
+        justify-content: center;
+        width: 100%;
+    }
+
+    nav {
+        background: rgb(80,80,80);
+        display: grid;
+        justify-items: center;
+        position: relative;
+    }
+
+    .menu {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .botonesMenu:hover > .subMenu {
+        display: none;
+    }
+
+    main {
+        padding: 0rem;
+    }
+
+    .grid-footer {
+        align-items: center;        
+        column-gap: 0rem;
+        display: grid;
+        grid-area: grid-footer;
+        grid-template-areas: 
+        "grid-footer-logo grid-footer-instagram grid-footer-youtube"
+        "grid-footer-logo grid-footer-facebook grid-footer-email";
+        justify-content: center;
+        padding: 2rem;
+    }
+    
+    .grid-footer-logo {
+        display: grid;
+        grid-area: grid-footer-logo;
+    }
+    
+    .grid-footer-instagram {
+        display: grid;
+        grid-area: grid-footer-instagram;
+    }
+    
+    .grid-footer-youtube {
+        display: grid;
+        grid-area: grid-footer-youtube;
+    }
+    
+    .grid-footer-facebook {
+        display: grid;
+        grid-area: grid-footer-facebook;
+    }
+    
+    .grid-footer-email {
+        display: grid;
+        grid-area: grid-footer-email;
+    }
+
+    .footerSocial {
+        margin: 0rem;
+    }
+    
+        /* CLASES INDEX.html*/
+
+    /* Clases Carrousel */
+
+    .carrousel {
+        max-width: 90vw;
+    }
+
+    .carrouselImg {
+        width: 100%;
+    }
+
+    .carrouselTexto {
+        position: absolute;
+        width: 100%;
+    }
+
+    .carrouselH2 {
+        font-size: 2.5rem;
+    }
+
+    .carrouselP {
+        color: white;
+        font-size: 1.5rem;
+        font-weight: 500;
+        letter-spacing: 0.1rem;
+        line-height: 1.4;
+        padding: 1.5rem;
+    }
+
+    .carrousel:hover {
+        box-shadow: 0.5rem 0.5rem 0.5rem rgb(80,80,80, 0.5);
+        width: 100%;
+    }
+
+    .carrousel:hover .carrouselImg {
+        width: 100%;
+    }
+
+    .carrousel:hover .carrouselTexto {
+        width: 100%;
+    }
+
+    /* Clases Notas Terciarias */
+
+    .sectionNotasTerciarias {
+        max-width: 100%;
+    }
+
+    .notasTerciarias {
+        padding: 1rem;
+    }
+
+    /* Clases Notas Secundarias */
+
+    .sectionNotasSecundarias {
+        max-width: 80vw;
+    }
+
+    .sectionNotasSecundarias article {
+        margin: 0rem;
+    }
+
+    .notasSecundarias {
+        align-items: center;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .notasSecundarias img {
+        max-width: 100%;
+    }
+
+    .notasSecundariasTexto {
+        max-width: 100%;
+    }
+
+    .notasSecundariasTexto h3 {
+        font-size: 2rem;
+    }
+
+    .notasSecundariasTexto p {
+        font-size: 1.5rem;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+
+    .grid-container {
+        justify-content: center;
+    }
+    
+    /* .grid-main {
+        display: grid;
+        grid-area: grid-main;
+        padding: 0rem;
+    } */
+
+    nav {
+        background: rgb(80,80,80);
+        display: grid; /* PROPIEDADES PARA MOBILE */
+        justify-items: center;
+        position: static;
+    }
+
+    .menu {
+        /* align-items: center; */
+        display: flex;
+        flex-direction: column;
+        padding-bottom: 2rem;
+    }
+
+    .botonesMenu:hover > .subMenu {
+        display: none;
+    }
+
+    .grid-footer {
+        align-items: center;        
+        column-gap: 2rem;
+        display: grid;
+        grid-area: grid-footer;
+        grid-template-areas: 
+        "grid-footer-logo"
+        "grid-footer-instagram"
+        "grid-footer-youtube"
+        "grid-footer-facebook"
+        "grid-footer-email";
+        justify-content: center;
+        padding-bottom: 2rem;
+        width: 100vw;
+    }
+
+    .footerSocial {
+        margin: 0rem;
+    }
+
+    
+    /* CLASES INDEX.html*/
+
+    /* Clases Carrousel */
+
+    /* .carrousel {
+        display: grid;
+        margin: 0rem 5rem;
+        max-width: 32rem;
+    }
+
+    .carrouselImg {
+        justify-self: center;
+        display: grid;
+        width: 100%;
+    }
+
+    .carrouselTexto {
+        background-color: rgba(0, 110, 205, 0.8);
+        position: relative;
+        width: 100%;
+    }
+    
+    .carrouselH2 {
+        color: rgb(230,230,230);
+        font-size: 2.5rem;
+        text-shadow: 0.25rem 0.25rem 0.25rem rgb(80, 80, 80, 0.75);
+    }
+    
+    .carrouselP {
+        color: rgb(220, 220, 220);
+        font-size: 1.8rem;
+        padding: 2rem;
+    }
+
+    .carrousel:hover {
+        margin: 0rem 5rem;
+        width: 30rem;
+    }
+    
+    .carrousel:hover .carrouselImg {
+        width: 30rem;
+    }
+    
+    .carrousel:hover .carrouselTexto {
+        width: 30rem;
+    } */
+
+    .carrousel {
+        max-width: 90vw;
+        position: relative;
+    }
+    
+    .carrouselImg {
+        display: flex;
+        width: 100%;
+    }
+    
+    .carrouselTexto {
+        background-color: rgba(0, 110, 205, 0.5);
+        position: relative;
+        width: 100%;
+    }
+    
+    .carrouselH2 {
+        color: rgb(100, 100, 100);
+        font-size: 2.5rem;
+    }
+    
+    .carrouselP {
+        color: rgb(220, 220, 220);
+        font-size: 1.8rem;
+    }
+    
+    .carrousel:hover {
+        width: 100%;
+    }
+    
+    .carrousel:hover .carrouselImg {
+        width: 100%;
+    }
+    
+    .carrousel:hover .carrouselTexto {
+        background-color: rgb(170, 170, 170);
+        width: 100%;
+    }
+
+    .carrousel:hover h2{
+        color: rgba(0, 110, 255, 0.7);
+        /* text-shadow: none; */
+        width: 100%;
+    }
+
+    /* Clases Notas Terciarias */
+
+    .sectionNotasTerciarias {
+        align-items: center;
+        flex-direction: column;
+        margin: 2rem 0rem;
+        max-width: 32rem;
+    }
+    
+    .notasTerciarias {
+        max-width: 90%;
+        width: 90%;
+    }
+    
+    .notasTerciarias:hover {
+        width: 90%;
+    }
+
+}
