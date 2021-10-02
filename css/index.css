@@ -457,8 +457,13 @@ footer {
     max-width: 22%;
     padding: 2rem;
     width: 20%; }
+    .TERCIARIAS__NOTA__VOLANTA {
+      color: #337dff;
+      font-size: 1.5rem;
+      font-weight: 300; }
     .TERCIARIAS__NOTA__IMG {
-      max-width: 100%; }
+      max-width: 100%;
+      padding-top: 1rem; }
     .TERCIARIAS__NOTA__TITULO {
       color: #505050;
       font-size: 1.5rem;
@@ -467,24 +472,16 @@ footer {
     .TERCIARIAS__NOTA:hover {
       background-color: rgba(0, 110, 255, 0.25);
       padding: 1rem; }
+      .TERCIARIAS__NOTA:hover__VOLANTA {
+        font-weight: 700; }
       .TERCIARIAS__NOTA:hover__TITULO {
         font-weight: 700; }
+    .TERCIARIAS__NOTA:hover .TERCIARIAS__NOTA__VOLANTA {
+      font-weight: 700; }
     .TERCIARIAS__NOTA:hover .TERCIARIAS__NOTA__TITULO {
       font-weight: 700; }
 
 /* Clases Notas Secundarias */
-/*.SECUNDARIAS {
-    align-items: center;
-    display: flex;
-    flex-direction: column;
-    max-width: 120rem;
-    width: 100%;
-
-    &__NOTA {
-        background-color: rgb(204, 204, 204);
-        margin: 1rem 0rem;
-    }
-}*/
 .sectionNotasSecundarias {
   align-items: center;
   display: flex;
@@ -527,51 +524,6 @@ footer {
         .sectionNotasSecundarias > article:hover .notasSecundarias .notasSecundariasVolanta {
           font-weight: 700; }
 
-/*.NOTA {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    width: 100%;
-
-    &__IMG {
-        max-width: 30%;
-    }
-
-    &__TEXTO {
-        max-width: 70%;
-        padding: 2rem 2rem 0rem;
-
-        &__VOLANTA {
-            color: rgb(40, 40, 40);
-            font-size: 1.5rem;
-            font-weight: 300;
-        }
-
-        &__TITULO {
-            color: #337dff;
-            font-size: 2.5rem;
-            font-weight: 700;
-            padding-top: 1rem;
-        }
-
-        &__PARRAFO {
-            color: rgb(80, 80, 80);
-            font-size: 1.8rem;
-            line-height: 1.2;
-            padding: 2rem 0rem;
-        }
-    }
-}*/
-/*.notasSecundarias {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    width: 100%;
-
-    img {
-        max-width: 30%;
-    }
-}
 /* FIN clases index.html */
 /* INICIO MEDIAS INDEX.HTML */
 @media only screen and (max-width: 1024px) {
