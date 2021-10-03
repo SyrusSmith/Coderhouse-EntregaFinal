@@ -472,10 +472,6 @@ footer {
     .TERCIARIAS__NOTA:hover {
       background-color: rgba(0, 110, 255, 0.25);
       padding: 1rem; }
-      .TERCIARIAS__NOTA:hover__VOLANTA {
-        font-weight: 700; }
-      .TERCIARIAS__NOTA:hover__TITULO {
-        font-weight: 700; }
     .TERCIARIAS__NOTA:hover .TERCIARIAS__NOTA__VOLANTA {
       font-weight: 700; }
     .TERCIARIAS__NOTA:hover .TERCIARIAS__NOTA__TITULO {
@@ -709,7 +705,7 @@ footer {
       position: absolute;
       width: 100%; }
       .carrouselNotaPrincipal .carrouselLinkImg .carrouselNotaPrincipalTexto .carrouselVolantaPrincipal {
-        color: white;
+        color: #337dff;
         font-size: 1.5rem;
         font-weight: 500;
         font-style: italic;
@@ -733,12 +729,11 @@ footer {
 
 .carrouselNotaPrincipal:hover {
   box-shadow: 0rem 0rem 10rem rgba(80, 80, 80, 0.5);
-  transform: scale(1.02, 1.02);
-  /* .carrouselLinkImg {
-    transform: scale(1.02, 1.02);
-    } */ }
+  transform: scale(1.02, 1.02); }
   .carrouselNotaPrincipal:hover .carrouselNotaPrincipalTexto {
     background-image: linear-gradient(to bottom, rgba(0, 110, 205, 0.01), rgba(0, 110, 205, 0.8), rgba(0, 110, 205, 0.7)); }
+    .carrouselNotaPrincipal:hover .carrouselNotaPrincipalTexto .carrouselVolantaPrincipal {
+      font-weight: 700; }
     .carrouselNotaPrincipal:hover .carrouselNotaPrincipalTexto .carrouselNotaPrincipalH2 {
       color: white; }
     .carrouselNotaPrincipal:hover .carrouselNotaPrincipalTexto .carrouselNotaPrincipalP {
@@ -795,12 +790,14 @@ footer {
   transform: scale(1.02, 1.02); }
   .carrouselNotasSecundariasMarginBottom:hover .carrouselNotasSecundariasTexto, .carrouselNotasSecundariasMarginTop:hover .carrouselNotasSecundariasTexto {
     background-image: linear-gradient(to bottom, rgba(200, 200, 200, 0.8), rgba(200, 200, 200, 0.8)); }
-  .carrouselNotasSecundariasMarginBottom:hover .carrouselNotasSecundariasH2, .carrouselNotasSecundariasMarginTop:hover .carrouselNotasSecundariasH2 {
-    color: #337dff; }
-  .carrouselNotasSecundariasMarginBottom:hover .carrouselNotasSecundariasP, .carrouselNotasSecundariasMarginTop:hover .carrouselNotasSecundariasP {
-    color: white;
-    font-weight: 600;
-    line-height: 1.35; }
+    .carrouselNotasSecundariasMarginBottom:hover .carrouselNotasSecundariasTexto .carrouselVolantaSecundarias, .carrouselNotasSecundariasMarginTop:hover .carrouselNotasSecundariasTexto .carrouselVolantaSecundarias {
+      font-weight: 700; }
+    .carrouselNotasSecundariasMarginBottom:hover .carrouselNotasSecundariasTexto .carrouselNotasSecundariasH2, .carrouselNotasSecundariasMarginTop:hover .carrouselNotasSecundariasTexto .carrouselNotasSecundariasH2 {
+      color: #337dff; }
+    .carrouselNotasSecundariasMarginBottom:hover .carrouselNotasSecundariasTexto .carrouselNotasSecundariasP, .carrouselNotasSecundariasMarginTop:hover .carrouselNotasSecundariasTexto .carrouselNotasSecundariasP {
+      color: white;
+      font-weight: 600;
+      line-height: 1.35; }
 
 /* FIN CLASES NOTICIAS.html */
 /* --> INICIO CLASES REVIEWS.html <-- */
@@ -835,7 +832,7 @@ footer {
       position: absolute;
       width: 100%; }
       .carrouselReviewPrincipal .carrouselLinkImg .carrouselReviewPrincipalTexto .carrouselVolantaPrincipal {
-        color: white;
+        color: #337dff;
         font-size: 1.5rem;
         font-weight: 500;
         font-style: italic;
@@ -865,6 +862,8 @@ footer {
     } */ }
   .carrouselReviewPrincipal:hover .carrouselReviewPrincipalTexto {
     background-image: linear-gradient(to bottom, rgba(0, 110, 205, 0.01), rgba(0, 110, 205, 0.8), rgba(0, 110, 205, 0.7)); }
+    .carrouselReviewPrincipal:hover .carrouselReviewPrincipalTexto .carrouselVolantaPrincipal {
+      font-weight: 700; }
     .carrouselReviewPrincipal:hover .carrouselReviewPrincipalTexto .carrouselReviewPrincipalH2 {
       color: white; }
     .carrouselReviewPrincipal:hover .carrouselReviewPrincipalTexto .carrouselReviewPrincipalP {
@@ -921,12 +920,14 @@ footer {
   transform: scale(1.02, 1.02); }
   .carrouselNotasSecundariasMarginBottom:hover .carrouselNotasSecundariasTexto, .carrouselNotasSecundariasMarginTop:hover .carrouselNotasSecundariasTexto {
     background-image: linear-gradient(to bottom, rgba(200, 200, 200, 0.8), rgba(200, 200, 200, 0.8)); }
-  .carrouselNotasSecundariasMarginBottom:hover .carrouselNotasSecundariasH2, .carrouselNotasSecundariasMarginTop:hover .carrouselNotasSecundariasH2 {
-    color: #337dff; }
-  .carrouselNotasSecundariasMarginBottom:hover .carrouselNotasSecundariasP, .carrouselNotasSecundariasMarginTop:hover .carrouselNotasSecundariasP {
-    color: white;
-    font-weight: 600;
-    line-height: 1.35; }
+    .carrouselNotasSecundariasMarginBottom:hover .carrouselNotasSecundariasTexto .carrouselVolantaSecundarias, .carrouselNotasSecundariasMarginTop:hover .carrouselNotasSecundariasTexto .carrouselVolantaSecundarias {
+      font-weight: 700; }
+    .carrouselNotasSecundariasMarginBottom:hover .carrouselNotasSecundariasTexto .carrouselNotasSecundariasH2, .carrouselNotasSecundariasMarginTop:hover .carrouselNotasSecundariasTexto .carrouselNotasSecundariasH2 {
+      color: #337dff; }
+    .carrouselNotasSecundariasMarginBottom:hover .carrouselNotasSecundariasTexto .carrouselNotasSecundariasP, .carrouselNotasSecundariasMarginTop:hover .carrouselNotasSecundariasTexto .carrouselNotasSecundariasP {
+      color: white;
+      font-weight: 600;
+      line-height: 1.35; }
 
 /* FIN CLASES REVIEWS.html */
 /* --> INICIO CLASES unitenos.html <-- */

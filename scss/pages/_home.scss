@@ -123,15 +123,6 @@
         &:hover {
             background-color: rgba(0, 110, 255, 0.25);
             padding: $spacing-md;
-            // width: 20%;
-
-            &__VOLANTA {
-                font-weight: 700;
-            }
-
-            &__TITULO {
-                font-weight: 700;
-            }
         }
 
         &:hover &{
