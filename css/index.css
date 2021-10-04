@@ -102,6 +102,18 @@ header {
     animation-timing-function: ease;
     animation-duration: 3s;
     animation-iteration-count: infinite; }
+  .NAVBAR__CHECKBOX {
+    display: none; }
+  .NAVBAR__TOGGLE {
+    display: none; }
+    .NAVBAR__TOGGLE svg {
+      color: white;
+      height: 30px;
+      width: 30px; }
+    .NAVBAR__TOGGLE .iconMenu {
+      background-image: url("../media/icons/hamburguerIcon.svg"); }
+    .NAVBAR__TOGGLE .iconClose {
+      background-image: url("../media/icons/closeIcon.svg"); }
 
 @keyframes logoRotate {
   0% {
@@ -114,51 +126,27 @@ header {
     opacity: 1; } }
 
 /* CLASES MENU */
-/*.MENU {
-    align-items: center;
-    display: flex;    
-    font-size: 1.5em;
-    font-weight: 900;
-    justify-content: center;
-    margin-bottom: 0rem;
-    width: 100%;
-
-    &__BOTON {
-        padding: 0.5rem 1rem;
-
-        &.--ACTIVO {
-            & > a{
-                color: white;
-                font-size: 1.7rem;
-                font-weight: 900;
-            }
-        }
-    }
-}*/
 .menu {
   align-items: center;
   display: flex;
   font-size: 1.5em;
   font-weight: 900;
   margin-bottom: 0rem; }
-
-.botonesMenu {
-  padding: 0.5rem 1rem; }
-
-.subMenu {
-  background-color: rgba(0, 29, 77, 0.9);
-  display: none;
-  position: absolute; }
-
-.botonesMenu:hover {
-  background-color: #337dff; }
-  .botonesMenu:hover > a {
-    color: #f5f5f5; }
-  .botonesMenu:hover > .subMenu {
-    display: flex;
-    flex-direction: column;
-    margin-top: 0.5rem;
-    margin-left: -1rem; }
+  .menu .botonesMenu {
+    padding: 0.5rem 1rem; }
+    .menu .botonesMenu .subMenu {
+      background-color: rgba(0, 29, 77, 0.9);
+      display: none;
+      position: absolute; }
+  .menu .botonesMenu:hover {
+    background-color: #337dff; }
+    .menu .botonesMenu:hover > a {
+      color: #f5f5f5; }
+    .menu .botonesMenu:hover > .subMenu {
+      display: flex;
+      flex-direction: column;
+      margin-top: 0.5rem;
+      margin-left: -1rem; }
 
 .paginaActiva > a {
   color: white;
@@ -196,13 +184,29 @@ ul > .paginaActiva {
     justify-items: center;
     position: static;
     width: 100vw; }
-  .menu {
-    /* align-items: center; */
-    display: flex;
-    flex-direction: column;
-    padding-bottom: 2rem; }
-  .botonesMenu:hover > .subMenu {
-    display: none; } }
+    .NAVBAR__TOGGLE {
+      cursor: pointer;
+      display: flex;
+      margin: 6rem 3.5rem 0rem;
+      position: absolute;
+      right: 0; }
+      .NAVBAR__TOGGLE .iconClose {
+        display: none; }
+    .NAVBAR .menu {
+      display: none;
+      flex-direction: column;
+      padding-bottom: 2rem; }
+    .NAVBAR .botonesMenu:hover > .subMenu {
+      display: none; }
+  /* FUNCIONALIDAD PARA QUE CUANDO CLICKEEN EL ICONO DEL MENU HAMBURGUESA SE DESPLIEGUE EL MENU*/
+  #NAVBAR__CHECKBOX:checked ~ .NAVBAR__TOGGLE {
+    margin: -11rem 3.5rem 0rem; }
+  #NAVBAR__CHECKBOX:checked ~ .NAVBAR__TOGGLE .iconMenu {
+    display: none; }
+  #NAVBAR__CHECKBOX:checked ~ .NAVBAR__TOGGLE .iconClose {
+    display: flex; }
+  #NAVBAR__CHECKBOX:checked ~ .menu {
+    display: flex; } }
 
 /* FIN MEDIAS HEADER */
 /* --> INICIO CSS FOOTER <-- */
