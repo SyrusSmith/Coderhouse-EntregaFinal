@@ -5,7 +5,7 @@ footer {
     bottom: 0; /* Para que el footer quede pegado abajo */
     display: flex;
     justify-content: center;
-    position: absolute; /* Para que el footer quede pegado abajo */
+    position: relative; /* Para que el footer quede pegado abajo */
     width: 100%;
 }
 

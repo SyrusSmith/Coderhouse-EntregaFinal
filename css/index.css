@@ -214,7 +214,7 @@ footer {
   /* Para que el footer quede pegado abajo */
   display: flex;
   justify-content: center;
-  position: absolute;
+  position: relative;
   /* Para que el footer quede pegado abajo */
   width: 100%; }
 
@@ -581,6 +581,9 @@ footer {
 
 /* FIN MEDIAS INDEX.HTML */
 /* --> INICIO CLASES nosotros.html <-- */
+.nosotrosFooter {
+  position: absolute; }
+
 .mainQuieneSomos {
   flex-direction: row;
   justify-content: center; }
@@ -902,7 +905,10 @@ footer {
   font-size: 1.5rem; }
 
 .containerUnitenos {
+  height: 980px;
+  justify-content: center;
   margin: 0 auto;
+  max-height: 100%;
   max-width: 1200px;
   width: 100%; }
 
