@@ -72,7 +72,7 @@ main {
 
 @media only screen and (max-width: 600px) {
   main {
-    padding: 2rem 0rem 2rem; }
+    padding: 14rem 0rem 2rem; }
   .grid-container {
     justify-content: center; } }
 
@@ -178,11 +178,9 @@ ul > .paginaActiva {
 
 @media only screen and (max-width: 600px) {
   .NAVBAR {
-    background-color: #001d4d;
     display: grid;
     /* PROPIEDADES PARA MOBILE */
     justify-items: center;
-    position: static;
     width: 100vw; }
     .NAVBAR__TOGGLE {
       cursor: pointer;
@@ -303,35 +301,9 @@ footer {
   100% {
     transform: scale(1); } }
 
-/* .footerLogo:hover {
-    background-image: url("../media/LogoMeanMachine.png");
-} */
 .footerSocial:hover {
   background-color: rgba(0, 110, 255, 0.3);
-  transform: scale(1.1);
-  /*.footerIconoInstagram {
-        animation: bump 0.5s ease-in-out;
-        background-image: url("../media/icons/instagram.svg");
-        overflow: hidden;
-    }
-
-    .footerIconoYoutube {
-        animation: bump 0.5s ease-in-out;
-        background-image: url("../media/icons/youtube.svg");
-        overflow: hidden;
-    }
-
-    .footerIconoFacebook {
-        animation: bump 0.5s ease-in-out;
-        background-image: url("../media/icons/facebook.svg");
-        overflow: hidden;
-    }
-
-    .footerIconoMail {
-        animation: bump 0.5s ease-in-out;
-        background-image: url("../media/icons/email.svg");
-        overflow: hidden;
-    }*/ }
+  transform: scale(1.1); }
   .footerSocial:hover .footerIconoInstagram {
     animation: bump 0.5s ease-in-out;
     background-image: url("../media/icons/Instagram.svg");
@@ -579,9 +551,11 @@ footer {
 
 @media only screen and (max-width: 600px) {
   .container {
+    max-width: 100%;
+    padding: 0rem 4rem;
     width: 100vw; }
   .carrousel {
-    max-width: 90vw;
+    max-width: 100%;
     position: relative; }
     .carrousel .carousel-indicators {
       /* CLASE BOOTSTRAP */
@@ -939,6 +913,11 @@ footer {
   color: #337dff;
   font-size: 1.5rem; }
 
+.containerUnitenos {
+  margin: 0 auto;
+  max-width: 1200px;
+  width: 100%; }
+
 /* INICIO Clases Bootstrap Modificadas */
 .form-check-input {
   height: 1.5rem;
@@ -962,6 +941,21 @@ footer {
   width: 10rem; }
 
 /* FIN Clases Bootstrap Modificadas */
+/* MEDIAS unitenos.html*/
+@media only screen and (max-width: 1024px) {
+  .containerUnitenos {
+    padding: 16rem 4rem 2rem; }
+  .bootstrapOverride {
+    display: flex;
+    justify-content: center; } }
+
+@media only screen and (max-width: 600px) {
+  .containerUnitenos {
+    padding: 14rem 4rem 2rem; }
+  .bootstrapOverride {
+    display: flex;
+    justify-content: center; } }
+
 /* FIN CLASES unitenos.html */
 /* INICIO CLASES 404-not-found.html */
 .notFound {

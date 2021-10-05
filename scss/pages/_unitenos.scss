@@ -4,11 +4,13 @@
     font-size: 1.5rem;
 }
 
-/* INICIO Clases Bootstrap Modificadas */
-// .container {
-//     height: 90vh;
-// }
+.containerUnitenos {
+    margin: 0 auto;
+    max-width: 1200px;
+    width: 100%;
+}
 
+/* INICIO Clases Bootstrap Modificadas */
 .form-check-input {
     height: 1.5rem;
     width: 1.5rem;
@@ -33,4 +35,29 @@
     width: 10rem;
 }
 /* FIN Clases Bootstrap Modificadas */
+
+/* MEDIAS unitenos.html*/
+@media only screen and (max-width: 1024px) {
+
+    .containerUnitenos {
+        padding: $spacing-xl*8 $spacing-xl*2 $spacing-xl;
+    }
+
+    .bootstrapOverride {
+        display: flex;
+        justify-content: center;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+
+    .containerUnitenos {
+        padding: $spacing-xl*7 $spacing-xl*2 $spacing-xl;
+    }
+
+    .bootstrapOverride {
+        display: flex;
+        justify-content: center;
+    }
+}
 /* FIN CLASES unitenos.html */

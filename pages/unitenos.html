@@ -92,15 +92,15 @@
     </header>
     <!-- FIN HEADER -->
 
-    <main class="container"> <!-- INICIO MAIN -->
+    <main class="containerUnitenos"> <!-- INICIO MAIN -->
 
         <!-- Inicio Formulario -->
       <div class="form-control mt-3 p-5">
         <form action="/" method="POST" enctype="application/x-www-form-urlencoded" name="Formulario Trabajá con Nosotros"> 
-          <h2 class="pb-3 d-grid gap-2 d-md-flex justify-content-md-center">¿Querés trabajar con nosotros? <br> Dejanos tus datos abajo, ¡y te podremos contactar!</h2>
+          <h2 class="pb-3 bootstrapOverride gap-2 d-md-flex justify-content-md-center">¿Querés trabajar con nosotros? <br> Dejanos tus datos abajo, ¡y te podremos contactar!</h2>
           <!-- Inicio Nombre -->
-          <div class="form-group pb-2 d-grid gap-2 d-md-flex justify-content-md-center">
-            <div class="row col-6 pt-2">
+          <div class="form-group pb-2 bootstrapOverride gap-2 d-md-flex justify-content-md-center">
+            <div class="row col-12 pt-2">
                 <label class="form-label col-form-label-lg col-auto" for="Nombre">Nombre</label>
                 <input class="form-control form-control-lg col-auto" type="text" name="Nombre" placeholder="Escribí tu Nombre"> 
             </div>  
@@ -108,8 +108,8 @@
           <!-- Fin Nombre -->
 
           <!-- Inicio Apellido -->
-          <div class="form-group pb-2 d-grid gap-2 d-md-flex justify-content-md-center">
-            <div class="row col-6 pt-2">
+          <div class="form-group pb-2 bootstrapOverride gap-2 d-md-flex justify-content-md-center">
+            <div class="row col-12 pt-2">
                 <label class="form-label col-form-label-lg col-auto" for="Apellido">Apellido</label>
                 <input class="form-control form-control-lg col-auto" type="text" name="Apellido" placeholder="Escribí tu Apellido"> 
             </div>  
@@ -117,8 +117,8 @@
           <!-- Fin Apellido -->
 
           <!-- Inicio Mail -->
-          <div class="form-group pb-2 d-grid gap-2 d-md-flex justify-content-md-center">
-            <div class="row col-6 pt-2">
+          <div class="form-group pb-2 bootstrapOverride gap-2 d-md-flex justify-content-md-center">
+            <div class="row col-12 pt-2">
                 <label class="form-label col-form-label-lg col-auto" for="email">Email</label>
                 <input class="form-control form-control-lg col-auto" type="email" placeholder="Escribí tu Email"> 
             </div>
@@ -126,8 +126,8 @@
           <!-- Fin Mail -->
 
           <!-- Inicio Puesto a Aplicar -->
-          <div class="pt-4 pb-2 d-grid gap-2 d-md-flex justify-content-md-center">
-            <div class="row col-6">
+          <div class="pt-4 pb-2 bootstrapOverride gap-2 d-md-flex justify-content-md-center">
+            <div class="row col-12">
               <label for="Puesto" class="form-label col-form-label-lg">¿A qué puesto te gustaría aplicar?</label>
               <select class="form-select form-select-lg" name="Puesto" id="">
                 <option value="Copywriter">Redactor</option>
@@ -140,8 +140,8 @@
           <!-- Fin Puesto a Aplicar -->
 
           <!-- Inicio Enviar CV -->
-          <div class="pt-4 pb-2 d-grid gap-2 d-md-flex justify-content-md-center">
-            <div class="row col-6">
+          <div class="pt-4 pb-2 bootstrapOverride gap-2 d-md-flex justify-content-md-center">
+            <div class="row col-12">
                 <label for="Curriculum" class="form-label col-form-label-lg">Envianos tu CV</label>
                 <input class="form-control form-control-lg" type="file" name="Curriculum" id="">
             </div>
@@ -149,14 +149,14 @@
           <!-- Fin Enviar CV -->
 
           <!-- Inicio Términos y Condiciones -->
-          <div class="form-check d-grid gap-2 d-md-flex justify-content-md-center mt-5 mb-3">
+          <div class="form-check bootstrapOverride gap-2 d-md-flex justify-content-md-center mt-5 mb-3">
             <input type="checkbox" class="form-check-input me-1" name="terminos" value="0">
             <label for="terminos" class="form-check-label"><a class="terminosCondiciones" href="">Términos y Condiciones</a></label>
           </div>
           <!-- Fin Términos y Condiciones -->
 
           <!-- Inicio Botones -->  
-          <div class="d-grid gap-2 d-md-flex justify-content-md-center">
+          <div class="bootstrapOverride gap-2 d-md-flex justify-content-md-center">
             <button type="reset" class="btn btn-outline-danger btn-lg">Reset</button>
             <button type="submit" class="btn btn-dark btn-lg">Submit</button>
           </div>
