@@ -214,7 +214,7 @@ footer {
   /* Para que el footer quede pegado abajo */
   display: flex;
   justify-content: center;
-  position: relative;
+  position: absolute;
   /* Para que el footer quede pegado abajo */
   width: 100%; }
 
