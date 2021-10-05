@@ -180,3 +180,44 @@
     }
 }
 /* FIN CLASES NOTICIAS.html */
+/* MEDIA QUERIES noticias.html */
+@media only screen and (max-width: 1024px) {
+
+    .carrouselNoticias{
+        max-width: 90vw;
+    }
+}
+@media only screen and (max-width: 600px) {
+
+    .carrouselNoticias{
+        align-items: center;
+        flex-direction: column;
+        gap: $spacing-xl;
+        max-width: 100vw;
+        margin-bottom: $spacing-xl;
+
+        .carrouselNotaPrincipal{
+            max-width: 90%;
+            margin: 0rem;
+
+            .carrouselLinkImg{
+                display: flex;
+                justify-content: center;
+
+                .carrouselNotaPrincipalImg{
+                    height: 305px;
+                    margin-left: 0rem;
+                }
+            }
+        }
+
+        .carrouselNotasSecundarias{
+            max-width: 90%;
+        }
+    }
+
+    .noticiasSecundarias {
+        margin-top: $spacing-xl*8;
+    }
+}
+/*FIN MEDIAS noticias.html*/

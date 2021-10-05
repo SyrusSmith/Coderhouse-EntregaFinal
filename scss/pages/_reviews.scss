@@ -1,5 +1,5 @@
-/* --> INICIO CLASES REVIEWS.html <-- */
-.carrouselNoticias {
+/* --> INICIO CLASES reviews.html <-- */
+.carrouselReviews {
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -9,7 +9,7 @@
     width: 100%;
 }
 
-/* Carrousel Nota Principal */
+/* Carrousel Review Principal */
 .carrouselReviewPrincipal {
     display: flex;
     height: 660px;
@@ -102,8 +102,8 @@
     }    
 }
 
-/* Carrousel Notas Secundarias */
-.carrouselNotasSecundarias {
+/* Carrousel Reviews Secundarias */
+.carrouselReviewsSecundarias {
     display: flex;
     flex-direction: column;
     flex-shrink: 1;
@@ -113,12 +113,12 @@
     position: relative;
     width: 100%;
 
-    .carrouselNotasSecundariasImg {
+    .carrouselReviewsSecundariasImg {
         display: flex;
         max-width: 100%;
     }
     
-    .carrouselNotasSecundariasTexto {
+    .carrouselReviewsSecundariasTexto {
         background-color: rgb(100, 100, 100);
         bottom: 0.1em;
         margin-top: -($spacing-md*3);
@@ -134,7 +134,7 @@
             padding-left: $spacing-lg;
         }
     
-        .carrouselNotasSecundariasH2 {
+        .carrouselReviewsSecundariasH2 {
             color: rgb(235, 235, 235);
             font-size: $font-xl;
             font-weight: 700;
@@ -143,7 +143,7 @@
             width: 100%;
         }
         
-        .carrouselNotasSecundariasP {
+        .carrouselReviewsSecundariasP {
             color: rgb(220, 220, 220);
             font-size: $font-lg;
             font-weight: 500;
@@ -154,34 +154,75 @@
     }
 }
 
-.carrouselNotasSecundariasMarginBottom {
+.carrouselReviewsSecundariasMarginBottom {
     margin-bottom: 0.5rem;
 }
 
-.carrouselNotasSecundariasMarginTop {
+.carrouselReviewsSecundariasMarginTop {
     margin-top: 0.5rem;
 }
 
-.carrouselNotasSecundariasMarginBottom:hover, .carrouselNotasSecundariasMarginTop:hover {
+.carrouselReviewsSecundariasMarginBottom:hover, .carrouselReviewsSecundariasMarginTop:hover {
 
     transform: scale(1.02, 1.02);
 
-    .carrouselNotasSecundariasTexto {
+    .carrouselReviewsSecundariasTexto {
         background-image: linear-gradient(to bottom, rgba(200, 200, 200, 0.8), rgba(200, 200, 200, 0.8));
 
         .carrouselVolantaSecundarias {
             font-weight: 700;
         }
 
-        .carrouselNotasSecundariasH2 {
+        .carrouselReviewsSecundariasH2 {
             color: #337dff;
         }
     
-        .carrouselNotasSecundariasP {
+        .carrouselReviewsSecundariasP {
             color: white;
             font-weight: 600;
             line-height: 1.35;
         }
     }
 }
-/* FIN CLASES REVIEWS.html */
+/* FIN CLASES reviews.html */
+/* MEDIA QUERIES reviews.html */
+@media only screen and (max-width: 1024px) {
+
+    .carrouselReviews{
+        max-width: 90vw;
+    }
+}
+@media only screen and (max-width: 600px) {
+
+    .carrouselReviews{
+        align-items: center;
+        flex-direction: column;
+        gap: $spacing-xl;
+        max-width: 100vw;
+        margin-bottom: $spacing-xl;
+
+        .carrouselReviewPrincipal{
+            max-width: 90%;
+            margin: 0rem;
+
+            .carrouselLinkImg{
+                display: flex;
+                justify-content: center;
+
+                .carrouselReviewPrincipalImg{
+                    height: 305px;
+                    margin-left: 0rem;
+                }
+            }
+        }
+
+        .carrouselReviewsSecundarias{
+            max-width: 90%;
+        }
+    }
+
+    .reviewsSecundarias {
+        margin-top: $spacing-xl*8;
+    }
+}
+/*FIN MEDIAS reviews.html*/
