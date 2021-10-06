@@ -574,16 +574,18 @@ footer {
     width: 90%; } }
 
 @media only screen and (max-width: 440px) {
-  .carrousel .carrouselTexto .carrouselH2 {
-    font-size: 2rem;
-    padding: 1rem 3.6rem 2rem; }
-  .carrousel .carrouselTexto .carrouselVolantaMobile {
-    font-size: 1.5rem;
-    padding-left: 3.6rem; }
-  .carrousel .carrouselTexto .carrouselP {
-    font-size: 1.5rem;
-    line-height: 1.8rem;
-    padding-left: 3.6rem; } }
+  .carrousel {
+    max-height: 120vh; }
+    .carrousel .carrouselTexto .carrouselH2 {
+      font-size: 2rem;
+      padding: 1rem 3.6rem 2rem; }
+    .carrousel .carrouselTexto .carrouselVolantaMobile {
+      font-size: 1.5rem;
+      padding: 0rem 3.6rem; }
+    .carrousel .carrouselTexto .carrouselP {
+      font-size: 1.5rem;
+      line-height: 1.8rem;
+      padding: 0rem 3.6rem; } }
 
 /* FIN MEDIAS INDEX.HTML */
 /* --> INICIO CLASES nosotros.html <-- */

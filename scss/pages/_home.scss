@@ -402,6 +402,8 @@
     
     .carrousel {
 
+        max-height: 120vh;
+
         .carrouselTexto {
 
             .carrouselH2 {
@@ -411,13 +413,13 @@
         
             .carrouselVolantaMobile {
                 font-size: $font-lg;
-                padding-left: $spacing-xl*1.8;
+                padding: 0rem $spacing-xl*1.8;
             }
             
             .carrouselP {
                 font-size: $spacing-lg;
                 line-height: 1.8rem;
-                padding-left: $spacing-xl*1.8;
+                padding: 0rem $spacing-xl*1.8;
             }
         }
     }
