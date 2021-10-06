@@ -134,19 +134,10 @@ header {
   margin-bottom: 0rem; }
   .menu .botonesMenu {
     padding: 0.5rem 1rem; }
-    .menu .botonesMenu .subMenu {
-      background-color: rgba(0, 29, 77, 0.9);
-      display: none;
-      position: absolute; }
   .menu .botonesMenu:hover {
     background-color: #337dff; }
     .menu .botonesMenu:hover > a {
       color: #f5f5f5; }
-    .menu .botonesMenu:hover > .subMenu {
-      display: flex;
-      flex-direction: column;
-      margin-top: 0.5rem;
-      margin-left: -1rem; }
 
 .paginaActiva > a {
   color: white;
@@ -172,9 +163,7 @@ ul > .paginaActiva {
     justify-items: center; }
   .menu {
     display: flex;
-    flex-direction: row; }
-  .botonesMenu:hover > .subMenu {
-    display: none; } }
+    flex-direction: row; } }
 
 @media only screen and (max-width: 600px) {
   .NAVBAR {
@@ -194,8 +183,6 @@ ul > .paginaActiva {
       display: none;
       flex-direction: column;
       padding-bottom: 2rem; }
-    .NAVBAR .botonesMenu:hover > .subMenu {
-      display: none; }
   /* FUNCIONALIDAD PARA QUE CUANDO CLICKEEN EL ICONO DEL MENU HAMBURGUESA SE DESPLIEGUE EL MENU*/
   #NAVBAR__CHECKBOX:checked ~ .NAVBAR__TOGGLE {
     margin: -11rem 3.5rem 0rem; }
@@ -469,9 +456,11 @@ footer {
 /* FIN clases index.html */
 /* INICIO MEDIAS INDEX.HTML */
 @media only screen and (max-width: 1024px) {
-  /* CLASES INDEX.html*/
+  .container {
+    max-width: 90vw; }
   /* Clases Carrousel */
   .carrousel {
+    height: 100vh;
     max-width: 90vw; }
     .carrousel .carrouselImg {
       width: 100%; }
@@ -479,6 +468,8 @@ footer {
       position: absolute;
       padding-bottom: 2.5rem;
       width: 100%; }
+      .carrousel .carrouselTexto .carrouselH2 {
+        padding: 1rem 2.5rem 0rem; }
       .carrousel .carrouselTexto .carrouselVolanta {
         padding-left: 2.5rem; }
       .carrousel .carrouselTexto .carrouselP {
@@ -496,7 +487,8 @@ footer {
       width: 100%; }
   /* Clases Notas Terciarias */
   .sectionNotasTerciarias {
-    max-width: 100%; }
+    max-width: 100%;
+    padding: 2rem 4rem; }
     .sectionNotasTerciarias .notasTerciarias {
       padding: 1rem; }
   /* Clases Notas Secundarias */
@@ -519,12 +511,13 @@ footer {
           .sectionNotasSecundarias > article .notasSecundarias .notasSecundariasTexto p {
             font-size: 1.5rem; } }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 700px) {
   .container {
     max-width: 100%;
     padding: 0rem 4rem;
     width: 100vw; }
   .carrousel {
+    height: 100%;
     max-width: 100%;
     position: relative; }
     .carrousel .carousel-indicators {
@@ -548,10 +541,11 @@ footer {
         font-weight: 500;
         font-style: italic;
         display: block;
-        padding-left: 2rem; }
+        padding: 0rem 6rem 1rem; }
       .carrousel .carrouselTexto .carrouselP {
         color: gainsboro;
-        font-size: 1.8rem; }
+        font-size: 1.5rem;
+        padding: 0rem 6rem 0rem; }
   .carrousel:hover {
     width: 100%; }
     .carrousel:hover .carrouselImg {
@@ -578,6 +572,18 @@ footer {
       width: 90%; }
   .notasTerciarias:hover {
     width: 90%; } }
+
+@media only screen and (max-width: 440px) {
+  .carrousel .carrouselTexto .carrouselH2 {
+    font-size: 2rem;
+    padding: 1rem 3.6rem 2rem; }
+  .carrousel .carrouselTexto .carrouselVolantaMobile {
+    font-size: 1.5rem;
+    padding-left: 3.6rem; }
+  .carrousel .carrouselTexto .carrouselP {
+    font-size: 1.5rem;
+    line-height: 1.8rem;
+    padding-left: 3.6rem; } }
 
 /* FIN MEDIAS INDEX.HTML */
 /* --> INICIO CLASES nosotros.html <-- */

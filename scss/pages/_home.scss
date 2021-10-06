@@ -211,14 +211,13 @@
 /* INICIO MEDIAS INDEX.HTML */
 @media only screen and (max-width: 1024px) {
 
-    /* CLASES INDEX.html*/
-
-    // main {
-    //     padding: ($spacing-xl*2) 0rem;
-    // }
+    .container {
+        max-width: 90vw;
+    }
 
     /* Clases Carrousel */
     .carrousel {
+        height: 100vh;
         max-width: 90vw;
 
         .carrouselImg {
@@ -229,6 +228,10 @@
             position: absolute;
             padding-bottom: $spacing-xxl;
             width: 100%;
+
+            .carrouselH2 {
+                padding: 1rem $spacing-xxl 0rem;
+            }
 
             .carrouselVolanta {
                 padding-left: $spacing-xxl;
@@ -260,6 +263,7 @@
     /* Clases Notas Terciarias */
     .sectionNotasTerciarias {
         max-width: 100%;
+        padding: $spacing-xl $spacing-xl*2;
 
         .notasTerciarias {
             padding: $spacing-md;
@@ -299,8 +303,7 @@
         }
     }
 }
-
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 700px) {
 
     .container {
         max-width: 100%;
@@ -309,6 +312,7 @@
     }
 
     .carrousel {
+        height: 100%;
         max-width: 100%;
         position: relative;
 
@@ -341,13 +345,13 @@
                 font-weight: 500;
                 font-style: italic;
                 display: block;
-                padding-left: $spacing-xl;
+                padding: 0rem ($spacing-xl*3) $spacing-md;
             }
             
             .carrouselP {
                 color: rgb(220, 220, 220);
-                font-size: 1.8rem;
-                // padding-bottom: $spacing-xxl;
+                font-size: $font-lg;
+                padding: 0rem ($spacing-xl*3) 0rem;
             }
         }
     }
@@ -392,6 +396,30 @@
     
     .notasTerciarias:hover {
         width: 90%;
+    }
+}
+@media only screen and (max-width: 440px) {
+    
+    .carrousel {
+
+        .carrouselTexto {
+
+            .carrouselH2 {
+                font-size: $font-xl;
+                padding: $spacing-md $spacing-xl*1.8 $spacing-xl;
+            }
+        
+            .carrouselVolantaMobile {
+                font-size: $font-lg;
+                padding-left: $spacing-xl*1.8;
+            }
+            
+            .carrouselP {
+                font-size: $spacing-lg;
+                line-height: 1.8rem;
+                padding-left: $spacing-xl*1.8;
+            }
+        }
     }
 }
 /* FIN MEDIAS INDEX.HTML */
