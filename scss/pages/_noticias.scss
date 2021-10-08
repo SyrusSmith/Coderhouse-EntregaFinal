@@ -220,4 +220,40 @@
         margin-top: $spacing-xl*8;
     }
 }
+@media only screen and (max-width: 400px) {
+
+    .carrouselNoticias{
+        
+        .carrouselNotaPrincipal{
+            height: 490px;
+            
+            .carrouselLinkImg{
+            
+                .carrouselNotaPrincipalTexto {
+
+                    bottom: -2.9em;
+
+                    .carrouselNotaPrincipalH2 {
+                        font-size: $font-xl;
+                    }
+                    
+                    .carrouselNotaPrincipalP {
+                        font-size: $font-lg;
+                        line-height: 1.2;
+                        padding-top: $spacing-md;
+                    }
+                }
+            }
+        }
+
+        .carrouselNotasSecundarias{
+            margin-top: $spacing-xl;
+            max-width: 90%;
+        }
+    }
+
+    .noticiasSecundarias {
+        margin-top: $spacing-xl;
+    }
+}
 /*FIN MEDIAS noticias.html*/

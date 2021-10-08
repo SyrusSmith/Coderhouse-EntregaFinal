@@ -315,6 +315,7 @@
         height: 100%;
         max-width: 100%;
         position: relative;
+        max-height: 120vh;
 
         .carousel-indicators { /* CLASE BOOTSTRAP */
             margin-bottom: 0rem;
@@ -344,12 +345,13 @@
                 font-size: $font-lg;
                 font-weight: 500;
                 font-style: italic;
-                display: block;
+                display: none;
                 padding: 0rem ($spacing-xl*3) $spacing-md;
             }
             
             .carrouselP {
                 color: rgb(220, 220, 220);
+                display: none;
                 font-size: $font-lg;
                 padding: 0rem ($spacing-xl*3) 0rem;
             }
@@ -401,7 +403,7 @@
 @media only screen and (max-width: 440px) {
     
     .carrousel {
-
+        height: 100%;
         max-height: 120vh;
 
         .carrouselTexto {
@@ -412,14 +414,16 @@
             }
         
             .carrouselVolantaMobile {
-                font-size: $font-lg;
-                padding: 0rem $spacing-xl*1.8;
+                display: none;
+                // font-size: $font-lg;
+                // padding: 0rem $spacing-xl*1.8;
             }
             
             .carrouselP {
-                font-size: $spacing-lg;
-                line-height: 1.8rem;
-                padding: 0rem $spacing-xl*1.8;
+                display: none;
+                // font-size: $spacing-lg;
+                // line-height: 1.8rem;
+                // padding: 0rem $spacing-xl*1.8;
             }
         }
     }

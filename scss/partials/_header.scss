@@ -98,7 +98,6 @@ ul {
     }
 }
 /* --> FIN CSS HEADER <-- */
-
 /* INICIO MEDIAS HEADER */
 @media only screen and (max-width: 1024px) {
     .grid-header {
@@ -121,11 +120,10 @@ ul {
     }
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 767px) {
     .NAVBAR {
         display: grid; /* PROPIEDADES PARA MOBILE */
         justify-items: center;
-        // position: static;
         width: 100vw;
 
         &__TOGGLE {
@@ -142,26 +140,43 @@ ul {
 
         .menu {
             display: none;
-            flex-direction: column;
-            padding-bottom: $spacing-xl;
+            flex-direction: row;
+            padding-bottom: 0rem;
+        }
+
+        /* FUNCIONALIDAD PARA QUE CUANDO CLICKEEN EL ICONO DEL MENU HAMBURGUESA SE DESPLIEGUE EL MENU*/
+        #NAVBAR__CHECKBOX:checked ~ .NAVBAR__TOGGLE { 
+            margin: 1rem $spacing-xl*1.75 0rem;
+        }
+
+        #NAVBAR__CHECKBOX:checked ~ .NAVBAR__TOGGLE .iconMenu {
+            display: none;
+        }
+
+        #NAVBAR__CHECKBOX:checked ~ .NAVBAR__TOGGLE .iconClose {
+            display: flex;
+        }
+
+        #NAVBAR__CHECKBOX:checked ~ .menu { 
+            display: flex;
         }
     }
-
-    /* FUNCIONALIDAD PARA QUE CUANDO CLICKEEN EL ICONO DEL MENU HAMBURGUESA SE DESPLIEGUE EL MENU*/
-    #NAVBAR__CHECKBOX:checked ~ .NAVBAR__TOGGLE { 
-        margin: -11rem $spacing-xl*1.75 0rem;
-    }
-
-    #NAVBAR__CHECKBOX:checked ~ .NAVBAR__TOGGLE .iconMenu {
-        display: none;
-    }
-
-    #NAVBAR__CHECKBOX:checked ~ .NAVBAR__TOGGLE .iconClose {
-        display: flex;
-    }
-
-    #NAVBAR__CHECKBOX:checked ~ .menu { 
-        display: flex;
-    }
 }
+
+@media only screen and (max-width: 600px) {
+    .NAVBAR {
+            display: grid; /* PROPIEDADES PARA MOBILE */
+            justify-items: center;
+            width: 100vw;
+            .menu {
+                display: none;
+                flex-direction: column;
+                padding-bottom: $spacing-md;
+            }
+
+            #NAVBAR__CHECKBOX:checked ~ .NAVBAR__TOGGLE { 
+                margin: -11rem $spacing-xl*1.75 0rem;
+            }
+        }
+    }
 /* FIN MEDIAS HEADER */
