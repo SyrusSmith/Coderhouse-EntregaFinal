@@ -146,7 +146,7 @@ ul {
 
         /* FUNCIONALIDAD PARA QUE CUANDO CLICKEEN EL ICONO DEL MENU HAMBURGUESA SE DESPLIEGUE EL MENU*/
         #NAVBAR__CHECKBOX:checked ~ .NAVBAR__TOGGLE { 
-            margin: 1rem $spacing-xl*1.75 0rem;
+            margin: 3rem $spacing-xl*1.75 0rem;
         }
 
         #NAVBAR__CHECKBOX:checked ~ .NAVBAR__TOGGLE .iconMenu {
@@ -175,7 +175,7 @@ ul {
             }
 
             #NAVBAR__CHECKBOX:checked ~ .NAVBAR__TOGGLE { 
-                margin: -11rem $spacing-xl*1.75 0rem;
+                margin: -10rem $spacing-xl*1.75 0rem;
             }
         }
     }

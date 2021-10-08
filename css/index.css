@@ -185,7 +185,7 @@ ul > .paginaActiva {
       flex-direction: row;
       padding-bottom: 0rem; }
     .NAVBAR #NAVBAR__CHECKBOX:checked ~ .NAVBAR__TOGGLE {
-      margin: 1rem 3.5rem 0rem; }
+      margin: 3rem 3.5rem 0rem; }
     .NAVBAR #NAVBAR__CHECKBOX:checked ~ .NAVBAR__TOGGLE .iconMenu {
       display: none; }
     .NAVBAR #NAVBAR__CHECKBOX:checked ~ .NAVBAR__TOGGLE .iconClose {
@@ -204,7 +204,7 @@ ul > .paginaActiva {
       flex-direction: column;
       padding-bottom: 1rem; }
     .NAVBAR #NAVBAR__CHECKBOX:checked ~ .NAVBAR__TOGGLE {
-      margin: -11rem 3.5rem 0rem; } }
+      margin: -10rem 3.5rem 0rem; } }
 
 /* FIN MEDIAS HEADER */
 /* --> INICIO CSS FOOTER <-- */
@@ -799,7 +799,7 @@ footer {
   .carrouselNoticias {
     max-width: 90vw; } }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 767px) {
   .carrouselNoticias {
     align-items: center;
     flex-direction: column;
@@ -810,11 +810,9 @@ footer {
       max-width: 90%;
       margin: 0rem; }
       .carrouselNoticias .carrouselNotaPrincipal .carrouselLinkImg {
-        display: flex;
-        justify-content: center; }
+        display: flex; }
         .carrouselNoticias .carrouselNotaPrincipal .carrouselLinkImg .carrouselNotaPrincipalImg {
-          height: 305px;
-          margin-left: 0rem; }
+          height: 100%; }
     .carrouselNoticias .carrouselNotasSecundarias {
       max-width: 90%; }
   .noticiasSecundarias {
@@ -823,8 +821,9 @@ footer {
 @media only screen and (max-width: 400px) {
   .carrouselNoticias .carrouselNotaPrincipal {
     height: 490px; }
-    .carrouselNoticias .carrouselNotaPrincipal .carrouselLinkImg .carrouselNotaPrincipalTexto {
-      bottom: -2.9em; }
+    .carrouselNoticias .carrouselNotaPrincipal .carrouselLinkImg {
+      height: 100%;
+      max-height: 325px; }
       .carrouselNoticias .carrouselNotaPrincipal .carrouselLinkImg .carrouselNotaPrincipalTexto .carrouselNotaPrincipalH2 {
         font-size: 2rem; }
       .carrouselNoticias .carrouselNotaPrincipal .carrouselLinkImg .carrouselNotaPrincipalTexto .carrouselNotaPrincipalP {
@@ -973,7 +972,7 @@ footer {
   .carrouselReviews {
     max-width: 90vw; } }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 767px) {
   .carrouselReviews {
     align-items: center;
     flex-direction: column;
@@ -984,15 +983,31 @@ footer {
       max-width: 90%;
       margin: 0rem; }
       .carrouselReviews .carrouselReviewPrincipal .carrouselLinkImg {
-        display: flex;
-        justify-content: center; }
+        display: flex; }
         .carrouselReviews .carrouselReviewPrincipal .carrouselLinkImg .carrouselReviewPrincipalImg {
-          height: 305px;
-          margin-left: 0rem; }
+          height: 100%; }
     .carrouselReviews .carrouselReviewsSecundarias {
       max-width: 90%; }
   .reviewsSecundarias {
     margin-top: 16rem; } }
+
+@media only screen and (max-width: 400px) {
+  .carrouselReviews .carrouselReviewPrincipal {
+    height: 490px; }
+    .carrouselReviews .carrouselReviewPrincipal .carrouselLinkImg {
+      height: 100%;
+      max-height: 325px; }
+      .carrouselReviews .carrouselReviewPrincipal .carrouselLinkImg .carrouselReviewPrincipalTexto .carrouselReviewPrincipalH2 {
+        font-size: 2rem; }
+      .carrouselReviews .carrouselReviewPrincipal .carrouselLinkImg .carrouselReviewPrincipalTexto .carrouselReviewPrincipalP {
+        font-size: 1.5rem;
+        line-height: 1.2;
+        padding-top: 1rem; }
+  .carrouselReviews .carrouselReviewsSecundarias {
+    margin-top: 2rem;
+    max-width: 90%; }
+  .reviewsSecundarias {
+    margin-top: 2rem; } }
 
 /*FIN MEDIAS reviews.html*/
 /* --> INICIO CLASES unitenos.html <-- */
