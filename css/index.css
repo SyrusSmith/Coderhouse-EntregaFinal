@@ -616,34 +616,31 @@ footer {
   min-height: 66vh;
   max-width: 60vw;
   width: 100%; }
-
-.nosotrosTexto {
-  flex-direction: column;
-  max-width: 60%;
-  padding-left: 2rem; }
-
-.nosotrosH2 {
-  color: #337dff;
-  font-size: 4rem;
-  font-weight: 700;
-  padding: 0rem 0rem 2rem;
-  width: 100%; }
-
-.nosotrosP {
-  color: #505050;
-  font-size: 2rem; }
-
-.nosotrosLogo {
-  display: flex;
-  max-width: 40%;
-  padding: 7rem 2rem; }
-
-.nosotrosLogoImg {
-  box-shadow: 0rem 0rem 0.25rem #505050;
-  display: flex;
-  height: auto;
-  max-width: 100%;
-  width: 30rem; }
+  .nosotros .nosotrosTexto {
+    flex-direction: column;
+    max-width: 60%;
+    padding-left: 2rem; }
+    .nosotros .nosotrosTexto .nosotrosH2 {
+      color: #337dff;
+      font-size: 4rem;
+      font-weight: 700;
+      padding: 0rem 0rem 2rem;
+      width: 100%; }
+    .nosotros .nosotrosTexto .nosotrosP {
+      color: #505050;
+      font-size: 2rem;
+      line-height: 3rem;
+      padding: 1rem 0rem; }
+  .nosotros .nosotrosLogo {
+    display: flex;
+    max-width: 40%;
+    padding: 7rem 2rem; }
+    .nosotros .nosotrosLogo .nosotrosLogoImg {
+      box-shadow: 0rem 0rem 0.25rem #505050;
+      display: flex;
+      height: auto;
+      max-width: 100%;
+      width: 30rem; }
 
 /* FIN CLASES nosotros.html */
 /* MEDIA QUERIES nosotros.html*/
@@ -659,11 +656,13 @@ footer {
     flex-direction: column;
     max-width: 100vw;
     width: 100%; }
-  .nosotrosTexto {
-    order: 2; }
-  .nosotrosLogo {
-    order: 1;
-    padding: 0rem 0rem 2rem; }
+    .nosotros .nosotrosTexto {
+      max-width: 100%;
+      order: 2; }
+    .nosotros .nosotrosLogo {
+      order: 1;
+      max-width: 100%;
+      padding: 0rem 0rem 2rem; }
   .nosotrosFooter {
     position: relative; } }
 
