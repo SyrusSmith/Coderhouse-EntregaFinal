@@ -232,24 +232,28 @@ footer {
     display: flex;
     padding: 1.5rem; }
   .footerSocial .footerIconoInstagram {
+    background-color: #b4b4b4;
     background-image: url("../media/icons/Instagram-gris.svg");
     border-radius: 0.5rem;
     height: 30px;
     width: 30px;
     overflow: hidden; }
   .footerSocial .footerIconoYoutube {
+    background-color: #b4b4b4;
     background-image: url("../media/icons/Youtube-gris.svg");
     border-radius: 0.5rem;
     height: 30px;
     width: 30px;
     overflow: hidden; }
   .footerSocial .footerIconoFacebook {
+    background-color: #b4b4b4;
     background-image: url("../media/icons/Facebook-gris.svg");
     border-radius: 0.5rem;
     height: 30px;
     width: 30px;
     overflow: hidden; }
   .footerSocial .footerIconoMail {
+    background-color: #b4b4b4;
     background-image: url("../media/icons/Mail-gris.svg");
     border-radius: 0.5rem;
     height: 30px;

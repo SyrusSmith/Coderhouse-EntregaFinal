@@ -28,6 +28,7 @@ footer {
 
     @each $social in Instagram, Youtube, Facebook, Mail {
         .footerIcono#{$social} {
+            background-color: rgb(180, 180, 180);
             background-image: url("../media/icons/#{$social}-gris.svg");
             border-radius: 0.5rem;
             height: 30px;
