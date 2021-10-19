@@ -1,4 +1,8 @@
-/* INICIO CLASES 404-not-found.html */
+/* INICIO CLASES 404.html */
+
+.container {
+    height: 100vh;
+}
 
 .notFound {
     align-items: center;
@@ -6,9 +10,9 @@
     flex-direction: column;
     justify-content: center;
     height: 100%;
+    margin-top: -3rem;
     // min-height: 65.5vh;
     min-width: 98vw;
-    padding: $spacing-xl*4.8;
 
     &__H1{
         display: block;
@@ -33,5 +37,26 @@
     &__img {
         height: 30rem;
         width: 30rem;
+    }
+}
+
+.footer404{
+    position: absolute;
+}
+/* FIN CLASES 404.html */
+/* INICIO MEDIAS 404.html */
+@media only screen and (max-width: 1024px) {
+    .container {
+        height: 90vh;
+    }
+}
+
+@media only screen and (max-width: 640px) {
+
+    .container {
+        padding: $spacing-xl*20 $spacing-xl*2 $spacing-xl*10;
+    }
+    .footer404 {
+        position: relative;
     }
 }

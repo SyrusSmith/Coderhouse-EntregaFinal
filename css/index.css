@@ -1065,15 +1065,18 @@ footer {
     justify-content: center; } }
 
 /* FIN CLASES unitenos.html */
-/* INICIO CLASES 404-not-found.html */
+/* INICIO CLASES 404.html */
+.container {
+  height: 100vh; }
+
 .notFound {
   align-items: center;
   display: flex;
   flex-direction: column;
   justify-content: center;
   height: 100%;
-  min-width: 98vw;
-  padding: 9.6rem; }
+  margin-top: -3rem;
+  min-width: 98vw; }
   .notFound__H1 {
     display: block;
     color: #337dff;
@@ -1091,3 +1094,18 @@ footer {
   .notFound__img {
     height: 30rem;
     width: 30rem; }
+
+.footer404 {
+  position: absolute; }
+
+/* FIN CLASES 404.html */
+/* INICIO MEDIAS 404.html */
+@media only screen and (max-width: 1024px) {
+  .container {
+    height: 90vh; } }
+
+@media only screen and (max-width: 640px) {
+  .container {
+    padding: 40rem 4rem 20rem; }
+  .footer404 {
+    position: relative; } }
